@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie d'Images Responsive</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Icônes FontAwesome -->
+</head>
+<body>
+  <!-- Barre de recherche pour filtrer les images par mot-clé -->
+  <input type="text" id="search" placeholder="Rechercher une image...">
+
+  <!-- Boutons de filtrage avec icônes -->
+  <div class="filters">
+    <button class="filter-button active" data-filter="all" aria-label="Afficher toutes les images">
+      <i class="fas fa-star"></i> Tout
+    </button>
+    <button class="filter-button" data-filter="beauté" aria-label="Filtrer par beauté">
+      <i class="fas fa-eye"></i> Beauté
+    </button>
+    <button class="filter-button" data-filter="voyage" aria-label="Filtrer par voyage">
+      <i class="fas fa-plane"></i> Voyage
+    </button>
+    <button class="filter-button" data-filter="wallpaper" aria-label="Filtrer par wallpapers">
+      <i class="fas fa-image"></i> Wallpapers
+    </button>
+    <button class="filter-button" data-filter="nourriture" aria-label="Filtrer par nourriture">
+      <i class="fas fa-utensils"></i> Nourriture
+    </button>
+    <button class="filter-button" data-filter="animal" aria-label="Filtrer par animaux">
+      <i class="fas fa-paw"></i> Animaux
+    </button>
+  </div>
+
+  <!-- Galerie d'images -->
+  <div class="gallery">
+    <!-- Beauté (5 images) -->
+    <div class="image" data-category="beauté">
+      <img src="image/beauté 1.jpg" alt="Beauté 1" loading="lazy">
+      <div class="overlay">
+        <p>Beauté 1</p>
+      </div>
+    </div>
+    <div class="image" data-category="beauté">
+      <img src="image/beauté 2.jpg" alt="Beauté 2" loading="lazy">
+      <div class="overlay">
+        <p>Beauté 2</p>
+      </div>
+    </div>
+    <div class="image" data-category="beauté">
+      <img src="image/beauté 3.jpg" alt="Beauté 3" loading="lazy">
+      <div class="overlay">
+        <p>Beauté 3</p>
+      </div>
+    </div>
+    <div class="image" data-category="beauté">
+      <img src="image/beauté 4.jpg" alt="Beauté 4" loading="lazy">
+      <div class="overlay">
+        <p>Beauté 4</p>
+      </div>
+    </div>
+    <div class="image" data-category="beauté">
+      <img src="image/beauté 5.jpg" alt="Beauté 5" loading="lazy">
+      <div class="overlay">
+        <p>Beauté 5</p>
+      </div>
+    </div>
+
+    <!-- Voyage (8 images) -->
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 1.jpg" alt="Voyage 1" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 1</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 2.jpg" alt="Voyage 2" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 2</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 3.jpg" alt="Voyage 3" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 3</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 4.jpg" alt="Voyage 4" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 4</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 5.jpg" alt="Voyage 5" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 5</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 6.jpg" alt="Voyage 6" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 6</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 7.jpg" alt="Voyage 7" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 7</p>
+      </div>
+    </div>
+    <div class="image" data-category="voyage">
+      <img src="image/voyage 8.jpg" alt="Voyage 8" loading="lazy">
+      <div class="overlay">
+        <p>Voyage 8</p>
+      </div>
+    </div>
+
+    <!-- Wallpapers (6 images) -->
+    <div class="image" data-category="wallpaper">
+      <img src="image/wallpapers 1.jpg" alt="Wallpaper 1" loading="lazy">
+      <div class="overlay">
+        <p>Wallpaper 1</p>
+      </div>
+    </div>
+    <div class="image" data-category="wallpaper">
+      <img src="image/wallpapers 2.jpg" alt="Wallpaper 2" loading="lazy">
+      <div class="overlay">
+        <p>Wallpaper 2</p>
+      </div>
+    </div>
+    <div class="image" data-category="wallpaper">
+      <img src="image/wallpapers 3.jpg" alt="Wallpaper 3" loading="lazy">
+      <div class="overlay">
+        <p>Wallpaper 3</p>
+      </div>
+    </div>
+    <div class="image" data-category="wallpaper">
+      <img src="image/wallpapers 4.jpg" alt="Wallpaper 4" loading="lazy">
+      <div class="overlay">
+        <p>Wallpaper 4</p>
+      </div>
+    </div>
+    <div class="image" data-category="wallpaper">
+      <img src="image/wallpapers 5.jpg" alt="Wallpaper 5" loading="lazy">
+      <div class="overlay">
+        <p>Wallpaper 5</p>
+      </div>
+    </div>
+    <div class="image" data-category="wallpaper">
+      <img src="image/wallpapers 6.jpg" alt="Wallpaper 6" loading="lazy">
+      <div class="overlay">
+        <p>Wallpaper 6</p>
+      </div>
+    </div>
+
+    <!-- Nourriture (10 images) -->
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 1.jpg" alt="Nourriture 1" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 1</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 2.jpg" alt="Nourriture 2" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 2</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 3.jpg" alt="Nourriture 3" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 3</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 4.jpg" alt="Nourriture 4" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 4</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 5.jpg" alt="Nourriture 5" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 5</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 6.jpg" alt="Nourriture 6" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 6</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 7.jpg" alt="Nourriture 7" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 7</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 8.jpg" alt="Nourriture 8" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 8</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 9.jpg" alt="Nourriture 9" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 9</p>
+      </div>
+    </div>
+    <div class="image" data-category="nourriture">
+      <img src="image/nouriture 10.jpg" alt="Nourriture 10" loading="lazy">
+      <div class="overlay">
+        <p>Nourriture 10</p>
+      </div>
+    </div>
+
+    <!-- Animaux (9 images) -->
+    <div class="image" data-category="animal">
+      <img src="image/animal 1.jpg" alt="Animal 1" loading="lazy">
+      <div class="overlay">
+        <p>Animal 1</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 2.jpg" alt="Animal 2" loading="lazy">
+      <div class="overlay">
+        <p>Animal 2</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 3.jpg" alt="Animal 3" loading="lazy">
+      <div class="overlay">
+        <p>Animal 3</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 4.jpg" alt="Animal 4" loading="lazy">
+      <div class="overlay">
+        <p>Animal 4</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 5.jpg" alt="Animal 5" loading="lazy">
+      <div class="overlay">
+        <p>Animal 5</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 6.jpg" alt="Animal 6" loading="lazy">
+      <div class="overlay">
+        <p>Animal 6</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 7.jpg" alt="Animal 7" loading="lazy">
+      <div class="overlay">
+        <p>Animal 7</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 8.jpg" alt="Animal 8" loading="lazy">
+      <div class="overlay">
+        <p>Animal 8</p>
+      </div>
+    </div>
+    <div class="image" data-category="animal">
+      <img src="image/animal 9.jpg" alt="Animal 9" loading="lazy">
+      <div class="overlay">
+        <p>Animal 9</p>
+      </div>
+    </div>
+  </div>
+
+ <!-- Lightbox pour afficher les images en grand -->
+ <div id="lightbox" class="lightbox">
+  <span class="close">&times;</span> <!-- Bouton pour fermer la Lightbox -->
+  <button class="nav-button prev">&larr;</button> <!-- Bouton précédent -->
+  <button class="nav-button next">&rarr;</button> <!-- Bouton suivant -->
+  <img class="lightbox-content" id="lightbox-img"> <!-- Image agrandie -->
+  <div class="lightbox-info">
+    <p id="lightbox-title"></p> <!-- Titre de l'image -->
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
